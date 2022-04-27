@@ -15,8 +15,8 @@
 👤 **Kel. A1**
 
 - [mivaldrii](https://github.com/mivaldrii)
-- [ReyRizki](https://github.com/ReyRizki)
-- [ReyRizki](https://github.com/ReyRizki)
+- [Bogel-47](https://github.com/Bogel-47)
+- [sakhihartanto](https://github.com/sakhihartanto)
 - [ReyRizki](https://github.com/ReyRizki)
 
 ## Show your support
