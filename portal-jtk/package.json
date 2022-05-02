@@ -1,7 +1,8 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "portal-jtk",
+  "description": "FrontEnd for JTK Website",
+  "version": "0.1.0",
+  "license" : "SEE LICENSE IN LICENSE",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
