@@ -13,6 +13,18 @@
 
 ### 🏠 [Homepage](https://github.com/Poisonous-Potato/JTK-Website)
 
+## Prerequisities
+1. Node v16.15.0 LTS
+2. Yarn v1.22.18
+
+## Install
+
+Install and run `portal-jtk`
+```sh
+yarn install
+yarn dev
+```
+
 ## Author
 
 👤 **Kel. A1**
@@ -21,6 +33,10 @@
 - [Bogel-47](https://github.com/Bogel-47)
 - [sakhihartanto](https://github.com/sakhihartanto)
 - [ReyRizki](https://github.com/ReyRizki)
+
+## 🤝 Contributing
+
+Refer to the [contributing guidelines](http://example.com).
 
 ## Show your support
 
