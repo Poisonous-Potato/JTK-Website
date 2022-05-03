@@ -4,11 +4,26 @@
   <a href="https://github.com/Poisonous-Potato/JTK-Website/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="https://gitmoji.dev">
+    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+  </a>
 </p>
 
 > Website for JTK POLBAN
 
 ### 🏠 [Homepage](https://github.com/Poisonous-Potato/JTK-Website)
+
+## Prerequisities
+1. Node v16.15.0 LTS
+2. Yarn v1.22.18
+
+## Install
+
+Install and run `portal-jtk`
+```sh
+yarn install
+yarn dev
+```
 
 ## Author
 
@@ -18,6 +33,10 @@
 - [Bogel-47](https://github.com/Bogel-47)
 - [sakhihartanto](https://github.com/sakhihartanto)
 - [ReyRizki](https://github.com/ReyRizki)
+
+## 🤝 Contributing
+
+Refer to the [contributing guidelines](http://example.com).
 
 ## Show your support
 
