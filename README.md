@@ -4,6 +4,9 @@
   <a href="https://github.com/Poisonous-Potato/JTK-Website/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="https://gitmoji.dev">
+    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+  </a>
 </p>
 
 > Website for JTK POLBAN
