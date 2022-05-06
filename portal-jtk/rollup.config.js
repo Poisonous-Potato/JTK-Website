@@ -35,7 +35,12 @@ export default {
         },
       }),
       svelte({
-        preprocess: sveltePreprocess({ sourceMap: dev }),
+        preprocess: sveltePreprocess({
+          sourceMap: dev,
+          scss: {
+            includePaths: ["theme"],
+          },
+        }),
         compilerOptions: {
           dev,
           hydratable: true,
@@ -98,7 +103,12 @@ export default {
         },
       }),
       svelte({
-        preprocess: sveltePreprocess({ sourceMap: dev }),
+        preprocess: sveltePreprocess({
+          sourceMap: dev,
+          scss: {
+            includePaths: ["theme"],
+          },
+        }),
         compilerOptions: {
           dev,
           generate: "ssr",
