@@ -1,6 +1,5 @@
 <script>
   import successkid from "images/successkid.jpg";
-  import { MaterialApp, Button } from "svelte-materialify/src";
 </script>
 
 <svelte:head>

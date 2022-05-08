@@ -41,7 +41,7 @@
     "sass": "^1.51.0",
     "svelte": "^3.17.3",
     "svelte-check": "^1.0.46",
-    "svelte-materialify": "^0.3.11",
+    "svelte-materialify": "https://gitpkg.now.sh/Poisonous-Potato/svelte-materialify/packages/svelte-materialify?chore/color",
     "svelte-preprocess": "^4.10.6",
     "tslib": "^2.0.1",
     "typescript": "^4.0.3"

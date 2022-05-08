@@ -2473,10 +2473,9 @@ svelte-check@^1.0.46:
     svelte-preprocess "^4.0.0"
     typescript "*"
 
-svelte-materialify@^0.3.11:
+"svelte-materialify@https://gitpkg.now.sh/Poisonous-Potato/svelte-materialify/packages/svelte-materialify?chore/color":
   version "0.3.11"
-  resolved "https://registry.yarnpkg.com/svelte-materialify/-/svelte-materialify-0.3.11.tgz#bdd0a73961e9b408bb584bf2d85b2bb39e5424e9"
-  integrity sha512-MLtZtdSOHditOdJOYqlB8s7NxIFRbYKXJzij5s9gz5WVbJFVEqdX2TqOleg4wYeMOujtOCm+/x3RP5YGyzRxIQ==
+  resolved "https://gitpkg.now.sh/Poisonous-Potato/svelte-materialify/packages/svelte-materialify?chore/color#c0d69e1df838304fab5c50439775b61d57286ff1"
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.6:
   version "4.10.6"
