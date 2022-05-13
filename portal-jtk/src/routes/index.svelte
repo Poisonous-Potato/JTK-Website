@@ -1,56 +1,30 @@
 <script>
-  import successkid from "images/successkid.jpg";
+  import { MaterialApp } from "svelte-materialify/src";
 </script>
 
 <svelte:head>
   <title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-  <img alt="Success Kid" src={successkid} />
-  <figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p>
-  <strong
-    >Try editing this file (src/routes/index.svelte) to test live reloading.</strong
-  >
-</p>
+<MaterialApp>
+  <div class="typography">
+    <h1 class="text-h1">Heading 1</h1>
+    <h2 class="text-h2">Heading 2</h2>
+    <h3 class="text-h3">Heading 3</h3>
+    <p class="text-subtitle-1">Subtitle 1</p>
+    <p class="text-subtitle-2">Subtitle 2</p>
+    <p class="text-body-1">Body 1</p>
+    <p class="text-button">Button</p>
+  </div>
+</MaterialApp>
 
 <style>
-  h1,
-  figure,
-  p {
+  .typography {
     text-align: center;
     margin: 0 auto;
   }
 
-  h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
-  }
-
   p {
     margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
   }
 </style>
