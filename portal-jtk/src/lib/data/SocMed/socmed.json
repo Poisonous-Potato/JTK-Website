@@ -1,0 +1,24 @@
+{
+  "accounts": [
+    {
+      "icon": "facebook-alt",
+      "url": "/"
+    },
+    {
+      "icon": "twitter",
+      "url": "/"
+    },
+    {
+      "icon": "linkedin",
+      "url": "/"
+    },
+    {
+      "icon": "instagram",
+      "url": "/"
+    },
+    {
+      "icon": "youtube",
+      "url": "/"
+    }
+  ]
+}
