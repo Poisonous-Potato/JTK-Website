@@ -11,9 +11,13 @@
   import Divider from "../Divider/index.svelte";
 
   import type { Navigation } from "../../../lib/types/navigation.type";
-  import * as data from "../../../lib/data/Navigation/footer.json";
+  import type { SocialMedia } from "../../../lib/types/socmed.type";
 
-  const navigations: Array<Navigation> = (<any>data).navigations;
+  import * as links from "../../../lib/data/Navigation/footer.json";
+  import * as socmed from "../../../lib/data/SocMed/socmed.json";
+
+  const navigations: Array<Navigation> = (<any>links).navigations;
+  const accounts: Array<SocialMedia> = (<any>socmed).accounts;
 </script>
 
 <MaterialApp>
@@ -65,36 +69,16 @@
             </Row>
             <Divider height="5px" class="mb-7 white" />
             <div class="d-flex justify-center">
-              <Icon
-                icon="dashicons:facebook-alt"
-                height={48}
-                color="white"
-                class="ml-7 mr-7"
-              />
-              <Icon
-                icon="dashicons:twitter"
-                height={48}
-                color="white"
-                class="ml-7 mr-7"
-              />
-              <Icon
-                icon="dashicons:linkedin"
-                height={48}
-                color="white"
-                class="ml-7 mr-7"
-              />
-              <Icon
-                icon="dashicons:instagram"
-                height={48}
-                color="white"
-                class="ml-7 mr-7"
-              />
-              <Icon
-                icon="dashicons:youtube"
-                height={48}
-                color="white"
-                class="ml-7 mr-7"
-              />
+              {#each accounts as account}
+                <a href={account.url}>
+                  <Icon
+                    icon="dashicons:{account.icon}"
+                    height={48}
+                    color="white"
+                    class="ml-7 mr-7"
+                  />
+                </a>
+              {/each}
             </div>
           </Container>
         </Col>
