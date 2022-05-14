@@ -7,6 +7,8 @@
     Col,
   } from "svelte-materialify/src";
   import Icon from "@iconify/svelte";
+
+  import Divider from "../Divider/index.svelte";
 </script>
 
 <MaterialApp>
@@ -76,7 +78,7 @@
                 </div>
               </Col>
             </Row>
-            <hr class="mb-7 divider" />
+            <Divider height="5px" class="mb-7 white" />
             <div class="d-flex justify-center">
               <Icon
                 icon="dashicons:facebook-alt"
@@ -132,12 +134,5 @@
 
   .font-weight-medium {
     font-weight: 500;
-  }
-
-  .divider {
-    height: 5px;
-    border-width: 0px;
-    color: white;
-    background-color: white;
   }
 </style>
