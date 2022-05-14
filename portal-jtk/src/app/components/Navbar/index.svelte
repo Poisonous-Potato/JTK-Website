@@ -10,53 +10,10 @@
   } from "svelte-materialify/src";
   import Divider from "../Divider/index.svelte";
 
-  type Navigation = {
-    name: string;
-    links: Array<Link>;
-    url?: string;
-  };
-
-  type Link = {
-    name: string;
-    url: string;
-  };
-
-  let navigations: Array<Navigation> = [
-    {
-      name: "Jurusan",
-      links: [
-        { name: "Jurusan Teknik Komputer dan Informatika", url: "/" },
-        { name: "D4 - Teknik Informatika", url: "/" },
-        { name: "D3 - Teknik Informatika", url: "/" },
-      ],
-    },
-    {
-      name: "Prestasi",
-      links: [
-        { name: "Akademik", url: "/" },
-        { name: "Non-Akademik", url: "/" },
-      ],
-    },
-    {
-      name: "Kurikulum",
-      links: [
-        { name: "Kurikulum D4", url: "/" },
-        { name: "Kurikulum D3", url: "/" },
-      ],
-    },
-    {
-      name: "Galeri",
-      url: "/",
-      links: [],
-    },
-    {
-      name: "Staff",
-      links: [
-        { name: "Dosen", url: "/" },
-        { name: "Tata Usaha", url: "/" },
-      ],
-    },
-  ];
+  import type { Navigation } from "../../../lib/types/navigation.type";
+  import navigationData from "../../../lib/data/Navigation/navbar.json";
+  
+  const navigations: Array<Navigation> = <any>navigationData;
 </script>
 
 <MaterialApp>

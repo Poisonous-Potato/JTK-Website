@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Jurusan",
+    "links": [
+      { "name": "Jurusan Teknik Komputer dan Informatika", "url": "/" },
+      { "name": "D4 - Teknik Informatika", "url": "/" },
+      { "name": "D3 - Teknik Informatika", "url": "/" }
+    ]
+  },
+  {
+    "name": "Prestasi",
+    "links": [
+      { "name": "Akademik", "url": "/" },
+      { "name": "Non-Akademik", "url": "/" }
+    ]
+  },
+  {
+    "name": "Kurikulum",
+    "links": [
+      { "name": "Kurikulum D4", "url": "/" },
+      { "name": "Kurikulum D3", "url": "/" }
+    ]
+  },
+  {
+    "name": "Galeri",
+    "url": "/",
+    "links": []
+  },
+  {
+    "name": "Staff",
+    "links": [
+      { "name": "Dosen", "url": "/" },
+      { "name": "Tata Usaha", "url": "/" }
+    ]
+  }
+]
