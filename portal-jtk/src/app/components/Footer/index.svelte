@@ -9,6 +9,11 @@
   import Icon from "@iconify/svelte";
 
   import Divider from "../Divider/index.svelte";
+
+  import type { Navigation } from "../../../lib/types/navigation.type";
+  import * as data from "../../../lib/data/Navigation/footer.json";
+
+  const navigations: Array<Navigation> = (<any>data).navigations;
 </script>
 
 <MaterialApp>
@@ -40,43 +45,23 @@
           <div class="mb-10 text-subtitle-1 text-center white-text">Links</div>
           <Container class="pl-16 pr-16">
             <Row>
-              <Col md={3}>
-                <div class="mb-4 text-subtitle-2 white-text">Tentang JTK</div>
-                <div
-                  class="text-body-1 font-weight-medium orange-text text-lighten-1"
-                >
-                  <p>Himpunan Mahasiswa Komputer</p>
-                  <p>Program Studi</p>
-                  <p>Kemahasiswaan Polban</p>
-                </div>
-              </Col>
-              <Col md={3}>
-                <div class="mb-4 text-subtitle-2 white-text">Penerimaan</div>
-                <div
-                  class="text-body-1 font-weight-medium orange-text text-lighten-1"
-                >
-                  <p>JPAC Polban</p>
-                  <p>SMB Polban</p>
-                </div>
-              </Col>
-              <Col md={3}>
-                <div class="mb-4 text-subtitle-2 white-text">Pendidikan</div>
-                <div
-                  class="text-body-1 font-weight-medium orange-text text-lighten-1"
-                >
-                  <p>Portal Akademik Polban</p>
-                  <p>Beasiswa</p>
-                  <p>Uptime IP Publik JTK</p>
-                </div>
-              </Col>
-              <Col md={3}>
-                <div class="mb-4 text-subtitle-2 white-text">Pengabdian</div>
-                <div
-                  class="text-body-1 font-weight-medium orange-text text-lighten-1"
-                >
-                  <p>APTIKOM</p>
-                </div>
-              </Col>
+              {#each navigations as navigation}
+                <Col md={3}>
+                  <div class="mb-4 text-subtitle-2 white-text">
+                    {navigation.name}
+                  </div>
+                  {#each navigation.links as link}
+                    <p>
+                      <a
+                        href={link.url}
+                        class="text-body-1 font-weight-medium orange-text text-lighten-1"
+                      >
+                        {link.name}
+                      </a>
+                    </p>
+                  {/each}
+                </Col>
+              {/each}
             </Row>
             <Divider height="5px" class="mb-7 white" />
             <div class="d-flex justify-center">
@@ -126,3 +111,7 @@
     </Container>
   </Footer>
 </MaterialApp>
+
+<style lang="scss">
+  @import "../../../lib/styles/typography/override.scss";
+</style>

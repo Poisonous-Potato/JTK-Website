@@ -1,0 +1,33 @@
+{
+  "navigations": [
+    {
+      "name": "Tentang JTK",
+      "links": [
+        { "name": "Himpunan Mahasiswa Komputer", "url": "/" },
+        { "name": "Program Studi", "url": "/" },
+        { "name": "Kemahasiswaan Polban", "url": "/" }
+      ]
+    },
+    {
+      "name": "Penerimaan",
+      "links": [
+        { "name": "JPAC Polban", "url": "/" },
+        { "name": "SMB Polban", "url": "/" }
+      ]
+    },
+    {
+      "name": "Pendidikan",
+      "links": [
+        { "name": "Portal Akademik Polban", "url": "/" },
+        { "name": "Beasiswa", "url": "/" },
+        { "name": "Uptime IP Publik JTK", "url": "/" }
+      ]
+    },
+    {
+      "name": "Pengabdian",
+      "links": [
+        { "name": "APTIKOM", "url": "/" }
+      ]
+    }
+  ]
+}

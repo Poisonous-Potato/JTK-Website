@@ -11,9 +11,9 @@
   import Divider from "../Divider/index.svelte";
 
   import type { Navigation } from "../../../lib/types/navigation.type";
-  import navigationData from "../../../lib/data/Navigation/navbar.json";
+  import * as data from "../../../lib/data/Navigation/navbar.json";
   
-  const navigations: Array<Navigation> = <any>navigationData;
+  const navigations: Array<Navigation> = (<any>data).navigations;
 </script>
 
 <MaterialApp>
@@ -76,9 +76,7 @@
 </MaterialApp>
 
 <style lang="scss">
-  a {
-    text-decoration: none;
-  }
+  @import "../../../lib/styles/typography/override.scss";
   .campus-name {
     font-size: 1.156rem;
   }
