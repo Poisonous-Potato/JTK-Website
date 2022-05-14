@@ -126,13 +126,3 @@
     </Container>
   </Footer>
 </MaterialApp>
-
-<style lang="scss">
-  .font-weight-bold {
-    font-weight: 700;
-  }
-
-  .font-weight-medium {
-    font-weight: 500;
-  }
-</style>
