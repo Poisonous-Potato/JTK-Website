@@ -18,5 +18,6 @@
     padding-top: 116px;
     margin: 0 auto;
     box-sizing: border-box;
+    min-height: calc(100vh - 589px);
   }
 </style>
