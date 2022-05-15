@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_jtks",
+  "info": {
+    "singularName": "news-jtk",
+    "pluralName": "news-jtks",
+    "displayName": "NewsJTK"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

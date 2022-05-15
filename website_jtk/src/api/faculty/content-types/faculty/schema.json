@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faculties",
+  "info": {
+    "singularName": "faculty",
+    "pluralName": "faculties",
+    "displayName": "Faculty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "vision_mission": {
+      "type": "richtext",
+      "required": true
+    },
+    "History": {
+      "type": "richtext",
+      "required": true
+    },
+    "Profile": {
+      "type": "richtext",
+      "required": true
+    },
+    "majors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::major.major",
+      "mappedBy": "faculty"
+    }
+  }
+}
