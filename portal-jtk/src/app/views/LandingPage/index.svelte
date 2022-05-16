@@ -1,12 +1,16 @@
 <script lang="ts">
-  import { MaterialApp, Container } from "svelte-materialify/src";
+  import { MaterialApp, Container, Button } from "svelte-materialify/src";
   import Icon from "@iconify/svelte";
+
+  import Divider from "../../components/Divider/index.svelte";
+
+  import partners from "../../../lib/data/Partner/partner";
 
   import banner from "../../../assets/landing-page/banner.jpg";
 </script>
 
 <MaterialApp>
-  <div class="banner">
+  <div id="banner">
     <div class="banner-component">
       <img src={banner} alt="Banner" />
     </div>
@@ -28,10 +32,34 @@
       </div>
     </div>
   </div>
+  <div class="d-flex justify-center section">
+    <Container class="pb-0">
+      <div class="section-content">
+        <h2 class="mb-16 text-h2 text-center grey-text text-darken-4">
+          Partnership JTK 2022
+        </h2>
+        <div class="d-flex justify-center align-center mb-16">
+          {#each partners as partner}
+            <div class="mr-6 ml-6">
+              <a href={partner.web} target="_blank">
+                <img src={partner.logo} alt="{partner.name} Logo" width={150} />
+              </a>
+            </div>
+          {/each}
+        </div>
+        <div class="d-flex justify-center">
+          <Button outlined class="blue darken-2 blue-text text-darken-2">
+            Join partnership with JTK
+          </Button>
+        </div>
+      </div>
+      <Divider height="5px" class="secondary-color" />
+    </Container>
+  </div>
 </MaterialApp>
 
 <style lang="scss">
-  .banner {
+  #banner {
     display: grid;
     grid-template-areas: "inner-div";
   }
@@ -53,5 +81,13 @@
   #link {
     font-size: 25px;
     text-decoration: underline;
+  }
+
+  .section {
+    margin-top: 100px;
+
+    .section-content {
+      margin-bottom: 100px;
+    }
   }
 </style>
