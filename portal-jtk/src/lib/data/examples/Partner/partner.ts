@@ -1,11 +1,11 @@
-import type { Partner } from "../../types/partner.type";
+import type { Partner } from "../../../types/Partner/partner.type";
 
-import google from "../../../assets/landing-page/partner-logo/google.png";
-import microsoft from "../../../assets/landing-page/partner-logo/microsoft.png";
-import oracle from "../../../assets/landing-page/partner-logo/oracle.png";
-import tokopedia from "../../../assets/landing-page/partner-logo/tokopedia.png";
-import riot from "../../../assets/landing-page/partner-logo/riot.png";
-import nvidia from "../../../assets/landing-page/partner-logo/nvidia.png";
+import google from "../../../../assets/landing-page/partner-logo/google.png";
+import microsoft from "../../../../assets/landing-page/partner-logo/microsoft.png";
+import oracle from "../../../../assets/landing-page/partner-logo/oracle.png";
+import tokopedia from "../../../../assets/landing-page/partner-logo/tokopedia.png";
+import riot from "../../../../assets/landing-page/partner-logo/riot.png";
+import nvidia from "../../../../assets/landing-page/partner-logo/nvidia.png";
 
 const partners: Array<Partner> = [
   {

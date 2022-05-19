@@ -1,0 +1,16 @@
+<script lang="ts">
+  import { MaterialApp, Container } from "svelte-materialify/src";
+
+  import type { AboutSection } from "../../../lib/types/About/about.type";
+
+  export let content: AboutSection;
+</script>
+
+<MaterialApp>
+  <Container class="mb-12">
+    <div class="d-flex justify-center">
+      <h2>{content.title}</h2>
+    </div>
+    <p>{@html content.description}</p>
+  </Container>
+</MaterialApp>

@@ -4,7 +4,7 @@
 
   import Divider from "../../components/Divider/index.svelte";
 
-  import partners from "../../../lib/data/Partner/partner";
+  import partners from "../../../lib/data/examples/Partner/partner";
 
   import banner from "../../../assets/landing-page/banner.jpg";
 </script>
