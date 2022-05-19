@@ -8,7 +8,7 @@ Setting .env file for auth the file with CDN and other keys and token in Strapi.
 
 ```
 make file .env
-add this things for CDN and other
+add this things for CDN and other keys and token in Strapi
 
 CLOUDINARY_NAME = website-jtk-cdn
 CLOUDINARY_KEY = 126811378689228
