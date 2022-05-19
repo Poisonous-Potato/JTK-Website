@@ -2,6 +2,25 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
+### `Setting .env`
+
+Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+
+```
+make file .env
+add this things for CDN and other
+
+CLOUDINARY_NAME = website-jtk-cdn
+CLOUDINARY_KEY = 126811378689228
+CLOUDINARY_SECRET = HfMAGgQZHmw4XS8UxW-O1B6JlGk
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS=2k8Oqzf7rORN/yrq/tV3dg==,s9Hg/FgJzm9+/tUhArhmYQ==,nrENZzyL3MgMoftEoAVwGQ==,Dw8HoEi1Cwv48F4KAxOyzA==
+API_TOKEN_SALT=l59NfQGfeZszqthoV9wfPA==
+ADMIN_JWT_SECRET=2lhyMa8oeM1dc0I91bg6gQ==
+JWT_SECRET=YE0p7axTkwGiWFzZLx9cag==
+```
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
