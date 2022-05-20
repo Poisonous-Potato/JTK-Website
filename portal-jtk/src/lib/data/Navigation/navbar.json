@@ -3,7 +3,7 @@
     {
       "name": "Jurusan",
       "links": [
-        { "name": "Jurusan Teknik Komputer dan Informatika", "url": "/" },
+        { "name": "Jurusan Teknik Komputer dan Informatika", "url": "/about" },
         { "name": "D4 - Teknik Informatika", "url": "/" },
         { "name": "D3 - Teknik Informatika", "url": "/" }
       ]
