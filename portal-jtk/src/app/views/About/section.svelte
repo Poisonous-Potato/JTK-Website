@@ -11,6 +11,6 @@
     <div class="d-flex justify-center">
       <h2>{content.title}</h2>
     </div>
-    <p>{@html content.description}</p>
+    <p class="text-body-1">{@html content.description}</p>
   </Container>
 </MaterialApp>
