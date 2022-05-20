@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "curricula",
+  "info": {
+    "singularName": "curriculum",
+    "pluralName": "curricula",
+    "displayName": "Curriculum"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "d4_majors": {
+      "type": "richtext",
+      "required": true
+    },
+    "d3_majors": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

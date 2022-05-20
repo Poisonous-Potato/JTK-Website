@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agendaas",
+  "info": {
+    "singularName": "agendaa",
+    "pluralName": "agendaas",
+    "displayName": "Agendaa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true,
+      "default": "2020-01-01"
+    },
+    "List": {
+      "type": "enumeration",
+      "enum": [
+        "Agenda1",
+        "Agenda2",
+        "Agenda3",
+        "Agenda.."
+      ]
+    }
+  }
+}

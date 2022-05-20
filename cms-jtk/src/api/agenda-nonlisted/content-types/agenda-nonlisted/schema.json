@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agenda_nonlisteds",
+  "info": {
+    "singularName": "agenda-nonlisted",
+    "pluralName": "agenda-nonlisteds",
+    "displayName": "Agenda_nonlisted",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Date": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

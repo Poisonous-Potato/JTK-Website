@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_jtks",
+  "info": {
+    "singularName": "staff-jtk",
+    "pluralName": "staff-jtks",
+    "displayName": "Staff_Jtk"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "image_link": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "NIP": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

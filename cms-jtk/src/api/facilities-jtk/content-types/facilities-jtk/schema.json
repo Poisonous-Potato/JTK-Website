@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facilities_jtks",
+  "info": {
+    "singularName": "facilities-jtk",
+    "pluralName": "facilities-jtks",
+    "displayName": "Facilities_jtk"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "image_link": {
+      "type": "string"
+    },
+    "FacilityName": {
+      "type": "string",
+      "required": true
+    },
+    "FacilityDescription": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
