@@ -17,9 +17,9 @@
   <img id="banner" class="mb-7" src={banner} alt="Banner" />
   <Container>
     <div class="d-flex justify-center mb-12">
-      <p class="text-center text-body-1">{content.description}</p>
+      <p class="text-center font-italic text-body-1">{content.description}</p>
     </div>
-    <Row>
+    <Row class="mb-12">
       <Col md={6}>
         <h2 class="text-center">Visi</h2>
         <p class="font-italic text-body-1">{@html content.vision}</p>
@@ -29,6 +29,18 @@
         <p class="font-italic text-body-1">{@html content.mission}</p>
       </Col>
     </Row>
+    <div class="mb-12">
+      <div class="d-flex justify-center">
+        <h2>Tujuan Program Studi</h2>
+      </div>
+      <p class="text-body-1">{@html content.objective}</p>
+    </div>
+    <div class="mb-12">
+      <div class="d-flex justify-center">
+        <h2>Kualifikasi Tenaga Pendidikan</h2>
+      </div>
+      <p class="text-body-1">{@html content.qualification}</p>
+    </div>
   </Container>
 </MaterialApp>
 
