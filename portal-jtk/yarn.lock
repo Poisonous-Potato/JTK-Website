@@ -2487,7 +2487,7 @@ svelte-check@^1.0.46:
 
 "svelte-materialify@https://gitpkg.now.sh/Poisonous-Potato/svelte-materialify/packages/svelte-materialify?customize":
   version "0.3.11"
-  resolved "https://gitpkg.now.sh/Poisonous-Potato/svelte-materialify/packages/svelte-materialify?customize#921580d4773f1a03fe2aca2001aa66c207988098"
+  resolved "https://gitpkg.now.sh/Poisonous-Potato/svelte-materialify/packages/svelte-materialify?customize#705821af8ff51ad44abb849050d49f9577a48bdd"
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.6:
   version "4.10.6"
