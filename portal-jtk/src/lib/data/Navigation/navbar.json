@@ -1,11 +1,10 @@
 {
   "navigations": [
     {
-      "name": "Jurusan",
+      "name": "Program Studi",
       "links": [
-        { "name": "Jurusan Teknik Komputer dan Informatika", "url": "/about" },
-        { "name": "D4 - Teknik Informatika", "url": "/" },
-        { "name": "D3 - Teknik Informatika", "url": "/" }
+        { "name": "D3 - Teknik Informatika", "url": "/prodi/d3-teknik-informatika" },
+        { "name": "D4 - Teknik Informatika", "url": "/prodi/d4-teknik-informatika" }
       ]
     },
     {
@@ -13,13 +12,6 @@
       "links": [
         { "name": "Akademik", "url": "/" },
         { "name": "Non-Akademik", "url": "/" }
-      ]
-    },
-    {
-      "name": "Kurikulum",
-      "links": [
-        { "name": "Kurikulum D4", "url": "/" },
-        { "name": "Kurikulum D3", "url": "/" }
       ]
     },
     {
