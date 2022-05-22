@@ -5,6 +5,7 @@ export type Major = {
   mission: string;
   objective: string;
   qualification: string;
+  accreditation: string;
   slug: string;
   updatedAt: string;
 };
