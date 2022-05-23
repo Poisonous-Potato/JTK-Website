@@ -1,0 +1,36 @@
+version: '3.3'
+services:
+  portal-jtk:
+    container_name: portal-jtk
+    image: portal-jtk
+    build: ./portal-jtk
+    ports:
+      - "80:3000"
+
+  cms-jtk:
+    container_name: cms-jtk
+    image: cms-jtk
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_NAME: website_jtk
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: jtk
+      DATABASE_PASSWORD: jtkpolban
+    build:
+      context: cms-jtk
+      dockerfile: Dockerfile
+    depends_on:
+     - postgres
+    command: ["npm", "start"]
+    ports: 
+    - "1337:1337"
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: website_jtk
+      POSTGRES_USER: jtk
+      POSTGRES_PASSWORD: jtkpolban
+    volumes:
+      - ./data:/var/lib/postgresql/data
