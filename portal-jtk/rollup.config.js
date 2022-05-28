@@ -9,12 +9,18 @@ import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
 import json from "@rollup/plugin-json";
+import { config as envConfig } from "dotenv";
 import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
+
+const configToReplace = {};
+for (const [key, v] of Object.entries(envConfig().parsed)) {
+  configToReplace[`process.env.${key}`] = `'${v}'`;
+}
 
 const onwarn = (warning, onwarn) =>
   (warning.code === "MISSING_EXPORT" && /'preload'/.test(warning.message)) ||
@@ -29,10 +35,12 @@ export default {
     output: config.client.output(),
     plugins: [
       replace({
+        include: ["src/**/*.ts", "src/**/*.svelte"],
         preventAssignment: true,
         values: {
           "process.browser": true,
           "process.env.NODE_ENV": JSON.stringify(mode),
+          ...configToReplace,
         },
       }),
       svelte({
@@ -98,10 +106,12 @@ export default {
     output: config.server.output(),
     plugins: [
       replace({
+        include: ["src/**/*.ts", "src/**/*.svelte"],
         preventAssignment: true,
         values: {
           "process.browser": false,
           "process.env.NODE_ENV": JSON.stringify(mode),
+          ...configToReplace,
         },
       }),
       svelte({
