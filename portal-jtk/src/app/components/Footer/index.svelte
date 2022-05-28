@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
   import {
     MaterialApp,
     Footer,
@@ -10,14 +12,23 @@
 
   import Divider from "../Divider/index.svelte";
 
-  import type { Navigation } from "../../../lib/types/navigation.type";
-  import type { SocialMedia } from "../../../lib/types/socmed.type";
+  import type { Navigation } from "../../../lib/types/Navigation/navigation.type";
+  import type { SocialMedia } from "../../../lib/types/Navigation/socmed.type";
 
-  import * as links from "../../../lib/data/Navigation/footer.json";
+  import getFooter from "../../../lib/functions/api/footer/index";
+
   import * as socmed from "../../../lib/data/SocMed/socmed.json";
 
-  const navigations: Array<Navigation> = (<any>links).navigations;
+  let navigations: Array<Navigation> = [];
   const accounts: Array<SocialMedia> = (<any>socmed).accounts;
+
+  onMount(async () => {
+    try {
+      navigations = await getFooter();
+    } catch (err) {
+      console.error(err);
+    }
+  });
 </script>
 
 <MaterialApp>
@@ -58,6 +69,7 @@
                     <p>
                       <a
                         href={link.url}
+                        target="_blank"
                         class="text-body-1 font-weight-medium orange-text text-lighten-1"
                       >
                         {link.name}
@@ -70,7 +82,7 @@
             <Divider height="5px" class="mb-7 white" />
             <div class="d-flex justify-center">
               {#each accounts as account}
-                <a href={account.url}>
+                <a href={account.url} target="_blank">
                   <Icon
                     icon="dashicons:{account.icon}"
                     height={48}

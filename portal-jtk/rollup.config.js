@@ -35,7 +35,7 @@ export default {
     output: config.client.output(),
     plugins: [
       replace({
-        include: ["src/**/*.ts", "src/**/*.svelte"],
+        include: ["src/**/*.ts", "src/**/*.js","src/**/*.svelte"],
         preventAssignment: true,
         values: {
           "process.browser": true,
@@ -106,7 +106,7 @@ export default {
     output: config.server.output(),
     plugins: [
       replace({
-        include: ["src/**/*.ts", "src/**/*.svelte"],
+        include: ["src/**/*.ts", "src/**/*.js","src/**/*.svelte"],
         preventAssignment: true,
         values: {
           "process.browser": false,
