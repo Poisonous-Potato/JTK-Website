@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "faculties",
   "info": {
     "singularName": "faculty",
@@ -12,27 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string",
+    "Section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "section.section",
       "required": true
-    },
-    "vision_mission": {
-      "type": "richtext",
-      "required": true
-    },
-    "History": {
-      "type": "richtext",
-      "required": true
-    },
-    "Profile": {
-      "type": "richtext",
-      "required": true
-    },
-    "majors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::major.major",
-      "mappedBy": "faculty"
     }
   }
 }

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_positions",
+  "info": {
+    "singularName": "job-position",
+    "pluralName": "job-positions",
+    "displayName": "JobPosition",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "curriculum": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::curriculum.curriculum",
+      "inversedBy": "job_positions"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_sections",
+  "info": {
+    "displayName": "Section",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

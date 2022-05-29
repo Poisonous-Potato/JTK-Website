@@ -4,7 +4,7 @@
   "info": {
     "singularName": "agendaa",
     "pluralName": "agendaas",
-    "displayName": "Agendaa",
+    "displayName": "FacultyAgenda",
     "description": ""
   },
   "options": {
@@ -12,19 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Date": {
-      "type": "date",
-      "required": true,
-      "default": "2020-01-01"
+    "description": {
+      "type": "text",
+      "required": true
     },
-    "List": {
-      "type": "enumeration",
-      "enum": [
-        "Agenda1",
-        "Agenda2",
-        "Agenda3",
-        "Agenda.."
-      ]
+    "poster": {
+      "type": "string",
+      "required": true
+    },
+    "agenda": {
+      "type": "component",
+      "repeatable": true,
+      "component": "agenda.agenda",
+      "required": true
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_agenda_agenda",
+  "info": {
+    "displayName": "Agenda",
+    "icon": "calendar-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
