@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_accreditation_accreditations",
+  "info": {
+    "displayName": "Accreditation",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "grade": {
+      "type": "string",
+      "required": true
+    },
+    "constitution": {
+      "type": "string",
+      "required": true
+    },
+    "certificate_url": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

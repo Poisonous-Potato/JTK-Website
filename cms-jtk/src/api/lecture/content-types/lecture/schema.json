@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lectures",
+  "info": {
+    "singularName": "lecture",
+    "pluralName": "lectures",
+    "displayName": "Lecture"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "semester": {
+      "type": "integer",
+      "required": true
+    },
+    "theory_sks": {
+      "type": "integer",
+      "required": true
+    },
+    "practice_sks": {
+      "type": "integer",
+      "required": true
+    },
+    "curriculum": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::curriculum.curriculum",
+      "inversedBy": "lectures"
+    }
+  }
+}

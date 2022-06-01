@@ -4,7 +4,7 @@
   "info": {
     "singularName": "agenda-nonlisted",
     "pluralName": "agenda-nonlisteds",
-    "displayName": "Agenda_nonlisted",
+    "displayName": "AcademicAgenda",
     "description": ""
   },
   "options": {
@@ -12,14 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "context": {
+      "type": "text",
+      "required": true
     },
-    "Description": {
-      "type": "richtext"
-    },
-    "Date": {
-      "type": "datetime",
+    "Agenda": {
+      "type": "component",
+      "repeatable": true,
+      "component": "agenda.agenda",
       "required": true
     }
   }

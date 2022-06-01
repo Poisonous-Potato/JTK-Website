@@ -12,35 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Major": {
-      "type": "string",
-      "required": true
+    "name": {
+      "type": "string"
     },
-    "Profile": {
-      "type": "richtext",
-      "required": true
-    },
-    "Objective": {
-      "type": "richtext",
-      "required": true
-    },
-    "Job_Position": {
-      "type": "richtext",
-      "required": true
-    },
-    "Dosen": {
-      "type": "richtext",
-      "required": true
+    "description": {
+      "type": "text"
     },
     "Accreditation": {
-      "type": "string",
-      "required": true
+      "type": "component",
+      "repeatable": false,
+      "component": "accreditation.accreditation"
     },
-    "faculty": {
+    "Section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "section.section"
+    },
+    "curricula": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::faculty.faculty",
-      "inversedBy": "majors"
+      "relation": "oneToMany",
+      "target": "api::curriculum.curriculum",
+      "mappedBy": "major"
     }
   }
 }

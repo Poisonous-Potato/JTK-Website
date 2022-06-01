@@ -4,20 +4,37 @@
   "info": {
     "singularName": "curriculum",
     "pluralName": "curricula",
-    "displayName": "Curriculum"
+    "displayName": "Curriculum",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "d4_majors": {
-      "type": "richtext",
-      "required": true
+    "name": {
+      "type": "string"
     },
-    "d3_majors": {
-      "type": "richtext",
-      "required": true
+    "description": {
+      "type": "text"
+    },
+    "major": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::major.major",
+      "inversedBy": "curricula"
+    },
+    "job_positions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-position.job-position",
+      "mappedBy": "curriculum"
+    },
+    "lectures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lecture.lecture",
+      "mappedBy": "curriculum"
     }
   }
 }
