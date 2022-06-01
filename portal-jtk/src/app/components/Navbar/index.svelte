@@ -10,10 +10,7 @@
   } from "svelte-materialify/src";
   import Divider from "../Divider/index.svelte";
 
-  import type { Navigation } from "../../../lib/types/Navigation/navigation.type";
-  import * as data from "../../../lib/data/Navigation/navbar.json";
-  
-  const navigations: Array<Navigation> = (<any>data).navigations;
+  import navigations from "../../../lib/data/Navigation/navbar";
 </script>
 
 <MaterialApp>
