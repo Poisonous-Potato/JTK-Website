@@ -13,14 +13,27 @@ const majors: Array<Major> = [
       },
       {
         title: "Tujuan Program Studi",
-        description: "Tujuan D3 Teknik Informatika adalah menjalankan tridharma secara konsisten dan utuh sehingga menghasilkan lulusan yang mampu:<ol type='1'><li>Menghasilkan tenaga di bidang perancangan dan implementasi perangkat lunak bisnis serta perancangan solusi bisnis berbasis teknologi informasi untuk menunjang kebutuhan masyarakat dan industri di lingkup nasional dan internasional, yang memiliki sikap dan kemampuan sebagai berikut:</li><ul><li>Beradaptasi terhadap perkembangan teknologi informasi</li><li>Belajar sepanjang hayat dan ulet</li><li>Berpikir kreatif, analitis dan sistematis</li><li>Berwirausaha</li><li>Bermoral</li><li>Berkomunikasi dalam bahasa Internasional.</li></ul><li>Menghasilkan lulusan dengan kompetensi yang diakui pada tingkat nasional maupun internasional.</li><li>Mendorong mahasiswa untuk menghasilkan produk terapan di bidang perangkat lunak bisnis yang bermanfaat bagi masyarakat dan industri baik nasional maupun internasional.</li><li>Menghasilkan produk pelayanan dan produk penelitian terapan di bidang teknologi informasi yang bermanfaat bagi masyarakat dan industri baik di tingkat nasional maupun internasional.</li></ol>",
+        description:
+          "Tujuan D3 Teknik Informatika adalah menjalankan tridharma secara konsisten dan utuh sehingga menghasilkan lulusan yang mampu:<ol type='1'><li>Menghasilkan tenaga di bidang perancangan dan implementasi perangkat lunak bisnis serta perancangan solusi bisnis berbasis teknologi informasi untuk menunjang kebutuhan masyarakat dan industri di lingkup nasional dan internasional, yang memiliki sikap dan kemampuan sebagai berikut:</li><ul><li>Beradaptasi terhadap perkembangan teknologi informasi</li><li>Belajar sepanjang hayat dan ulet</li><li>Berpikir kreatif, analitis dan sistematis</li><li>Berwirausaha</li><li>Bermoral</li><li>Berkomunikasi dalam bahasa Internasional.</li></ul><li>Menghasilkan lulusan dengan kompetensi yang diakui pada tingkat nasional maupun internasional.</li><li>Mendorong mahasiswa untuk menghasilkan produk terapan di bidang perangkat lunak bisnis yang bermanfaat bagi masyarakat dan industri baik nasional maupun internasional.</li><li>Menghasilkan produk pelayanan dan produk penelitian terapan di bidang teknologi informasi yang bermanfaat bagi masyarakat dan industri baik di tingkat nasional maupun internasional.</li></ol>",
       },
       {
         title: "Kualifikasi Dosen",
-        description: "Dosen program studi ini berkualifikasi S2 dan S3  dari perguruan tinggi ternama dari dalam negeri (ITB, UI, Tel-U, dll.), maupun dari luar negeri (Inggris, Jepang, Amerika, Australia, dan Taiwan). Mayoritas dosen telah tersertifikasi (sertifikasi dosen).",
+        description:
+          "Dosen program studi ini berkualifikasi S2 dan S3  dari perguruan tinggi ternama dari dalam negeri (ITB, UI, Tel-U, dll.), maupun dari luar negeri (Inggris, Jepang, Amerika, Australia, dan Taiwan). Mayoritas dosen telah tersertifikasi (sertifikasi dosen).",
       },
     ],
-    accreditation: "A",
+    accreditation: [
+      {
+        level: "Nasional",
+        grade: "A",
+        certificate_url: "",
+      },
+      {
+        level: "Internasional",
+        grade: "A",
+        certificate_url: "",
+      },
+    ],
     slug: "d3-teknik-informatika",
     updatedAt: "2022-05-20T00:46:37.653Z",
   },
@@ -36,14 +49,27 @@ const majors: Array<Major> = [
       },
       {
         title: "Tujuan Program Studi",
-        description: "Tujuan D4 Teknik Informatika adalah menjalankan tridharma secara konsisten dan utuh sehingga menghasilkan lulusan yang mampu:<ul><li>Menunjukkan keunggulan keahlian dan pengetahuan, serta memiliki sikap profesionalisme yang dibutuhkan untuk menjadi seorang software designer dan analyst.</li><li>Bekerja secara individu dan menjadi bagian dari suatu team untuk membangun, menyajikan dan memelihara perangkat lunak yang berkualitas.</li><li>Mengelola proyek pembangunan perangkat lunak</li></ul>",
+        description:
+          "Tujuan D4 Teknik Informatika adalah menjalankan tridharma secara konsisten dan utuh sehingga menghasilkan lulusan yang mampu:<ul><li>Menunjukkan keunggulan keahlian dan pengetahuan, serta memiliki sikap profesionalisme yang dibutuhkan untuk menjadi seorang software designer dan analyst.</li><li>Bekerja secara individu dan menjadi bagian dari suatu team untuk membangun, menyajikan dan memelihara perangkat lunak yang berkualitas.</li><li>Mengelola proyek pembangunan perangkat lunak</li></ul>",
       },
       {
         title: "Kualifikasi Dosen",
-        description: "Dosen program studi ini berkualifikasi S2 dan S3  dari perguruan tinggi ternama dari dalam negeri (ITB, UI, Tel-U, dll.), maupun dari luar negeri (Inggris, Jepang, Amerika, Australia, dan Taiwan). Mayoritas dosen telah tersertifikasi (sertifikasi dosen).",
+        description:
+          "Dosen program studi ini berkualifikasi S2 dan S3  dari perguruan tinggi ternama dari dalam negeri (ITB, UI, Tel-U, dll.), maupun dari luar negeri (Inggris, Jepang, Amerika, Australia, dan Taiwan). Mayoritas dosen telah tersertifikasi (sertifikasi dosen).",
       },
     ],
-    accreditation: "A",
+    accreditation: [
+      {
+        level: "Nasional",
+        grade: "A",
+        certificate_url: "",
+      },
+      {
+        level: "Internasional",
+        grade: "A",
+        certificate_url: "",
+      },
+    ],
     slug: "d4-teknik-informatika",
     updatedAt: "2022-05-20T00:46:37.653Z",
   },
