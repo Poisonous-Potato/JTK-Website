@@ -1,8 +1,8 @@
 import type { Navigation } from "../../types/Navigation/navigation.type";
 import type { Link } from "../../types/Navigation/link.type";
-import type { Major } from "../../types/Major/brief.type";
+import type { Major } from "../../types/Major/major.type";
 
-import majors from "../examples/Major/brief";
+import majors from "../examples/Major/major";
 
 const majorLink: Array<Link> = majors.map((major: Major) => {
   return {
