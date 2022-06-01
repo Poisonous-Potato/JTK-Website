@@ -3,11 +3,11 @@
   import { onMount } from "svelte";
   import axios from "axios";
 
-  import Section from "./section.svelte";
+  import Section from "../../components/Section/index.svelte";
   import Major from "./major.svelte";
 
   import sections from "../../../lib/data/examples/About/about";
-  import majors from "../../../lib/data/examples/Major/brief";
+  import majors from "../../../lib/data/examples/Major/major";
 
   import banner from "../../../assets/profile_banner.png";
 

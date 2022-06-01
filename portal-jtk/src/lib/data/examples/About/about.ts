@@ -1,6 +1,6 @@
-import type { AboutSection } from "../../../types/About/about.type";
+import type { Section } from "../../../types/Section/section.type";
 
-const sections: Array<AboutSection> = [
+const sections: Array<Section> = [
   {
     title: "Profil",
     description:

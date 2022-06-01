@@ -1,10 +1,9 @@
+import type { Section } from "../Section/section.type";
+
 export type Major = {
   name: string;
   description: string;
-  vision: string;
-  mission: string;
-  objective: string;
-  qualification: string;
+  sections: Array<Section>;
   accreditation: string;
   slug: string;
   updatedAt: string;

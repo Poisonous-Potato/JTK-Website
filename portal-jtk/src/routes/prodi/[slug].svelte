@@ -9,7 +9,7 @@
 <script lang="ts">
   import Major from "../../app/views/Major/index.svelte";
 
-  import type { Major as MajorType } from "../../lib/types/Major/brief.type";
+  import type { Major as MajorType } from "../../lib/types/Major/major.type";
 
   export let major: MajorType;
 </script>

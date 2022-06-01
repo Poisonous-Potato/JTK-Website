@@ -6,8 +6,9 @@
     Col,
     Button,
   } from "svelte-materialify/src";
+  import Section from "../../components/Section/index.svelte";
 
-  import type { Major } from "../../../lib/types/Major/brief.type";
+  import type { Major } from "../../../lib/types/Major/major.type";
 
   import banner from "../../../assets/profile_banner.png";
 
@@ -25,28 +26,9 @@
     <div class="d-flex justify-center mb-12">
       <p class="text-center font-italic text-body-1">{content.description}</p>
     </div>
-    <Row class="mb-12">
-      <Col md={6}>
-        <h2 class="text-center">Visi</h2>
-        <p class="font-italic text-body-1">{@html content.vision}</p>
-      </Col>
-      <Col md={6}>
-        <h2 class="text-center">Misi</h2>
-        <p class="font-italic text-body-1">{@html content.mission}</p>
-      </Col>
-    </Row>
-    <div class="mb-12">
-      <div class="d-flex justify-center">
-        <h2>Tujuan Program Studi</h2>
-      </div>
-      <p class="text-body-1">{@html content.objective}</p>
-    </div>
-    <div class="mb-12">
-      <div class="d-flex justify-center">
-        <h2>Kualifikasi Tenaga Pendidikan</h2>
-      </div>
-      <p class="text-body-1">{@html content.qualification}</p>
-    </div>
+    {#each content.sections as section}
+      <Section content={section} />
+    {/each}
     <div class="mb-12">
       <div class="d-flex justify-center">
         <h2>Akreditasi Prodi {content.name}</h2>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Major } from "../../../lib/types/Major/brief.type";
+  import type { Major } from "../../../lib/types/Major/major.type";
 
   import stringToDate from "../../../lib/functions/utilities/date/stringToDate";
   import formatDate from "../../../lib/functions/utilities/date/formatDate";

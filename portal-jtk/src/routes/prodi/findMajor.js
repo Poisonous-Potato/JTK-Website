@@ -1,4 +1,4 @@
-import majors from "../../lib/data/examples/Major/brief";
+import majors from "../../lib/data/examples/Major/major";
 
 function findMajor(slug) {
   let idx = -1;
